@@ -103,7 +103,7 @@ border-radius: 4px;
 padding: 6px 22px;
   cursor: pointer;
 
-    transition-property: background-color color;
+    transition-property: background-color, color, box-shadow;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -190,7 +190,7 @@ header {
   text-decoration: none;
   display: block;
 
-    transition-property: background-color color;
+    transition-property: box-shadow;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,7 +679,7 @@ color: rgba(255, 255, 255, 0.6);
 
       display: block;
 
-        transition-property: background-color color;
+        transition-property: color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -797,7 +797,7 @@ margin-bottom: 30px;
     border: 1px solid #afb1b8;
   border-radius: 4px;
 color:  #afb1b8;
-  transition-property: background-color color;
+  transition-property: border-color, color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -831,7 +831,7 @@ border-color: var(--brand-color2);
   align-items: center;
   color: #afb1b8;
 
-  transition-property: background-color color;
+  transition-property: background-color, color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -965,6 +965,8 @@ color: #FFFFFF;
 
   z-index: 1000;
   
+  transition: visibility 250ms, opacity 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -984,10 +986,6 @@ height: 581px;
   opacity: 0;
   pointer-events: none;
   
-}
-
-.backdrop {
-transition: visibility 250ms, opacity 250ms;
 }
 
 .modal-btn {
