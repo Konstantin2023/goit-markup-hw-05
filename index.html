@@ -46,7 +46,16 @@
       <section class="section hero">
         <div class="container">
           <h1 class="main-name">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button">Замовити послугу</button>
+          <button type="button" data-modal-open>Замовити послугу</button>
+
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam repudiandae voluptatum eaque obcaecati veritatis hic tempora totam iste reprehenderit, esse consectetur laboriosam accusantium delectus inventore quaerat recusandae architecto fuga. Distinctio.
+                    </p>
+                <button data-modal-close>Закрити</button>
+              </div>
+            </div>
         </div>
       </section>
       <!-- Корпоративні якості -->
@@ -98,29 +107,38 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list">
-            <li class="box-1">
-              <img
-                src="./images/img1.jpg"
-                alt="Програмування за планшетом"
-                width="370"
-                height="294"
-              />
+            <li>
+              <div class="box-1">
+                <img 
+                  src="./images/img1.jpg"
+                  alt="Програмування за планшетом"
+                  width="370"
+                  height="294"
+                />
+                <div class="box-1-1"><h3 class="picture-of-classes">Десктопні додатки</h3></div>
+              </div>
             </li>
-            <li class="box-2">
-              <img
-                src="./images/img2.jpg"
-                alt="Програмування за комп'ютером"
-                width="370"
-                height="294"
-              />
+            <li>
+              <div class="box-2">
+                <img
+                  src="./images/img2.jpg"
+                  alt="Програмування за комп'ютером"
+                  width="370"
+                  height="294"
+                />
+                <div class="box-1-1"><h3 class="picture-of-classes">Мобільні додатки</h3></div>
+              </div>
             </li>
-            <li class="box-3">
-              <img
-                src="./images/img3.jpg"
-                alt="Програмування за планшетом, вибір кольорів"
-                width="370"
-                height="294"
-              />
+            <li>
+              <div class="box-3">
+                <img
+                  src="./images/img3.jpg"
+                  alt="Програмування за планшетом, вибір кольорів"
+                  width="370"
+                  height="294"
+                />
+                <div class="box-1-1"><h3 class="picture-of-classes">Дизайнерські рішення</h3></div>
+              </div>
             </li>
           </ul>
         </div>
@@ -350,5 +368,7 @@
         </div>
       </div>
     </footer>
+    
+    <script src="./js/modal.js"></script>
   </body>
 </html>
