@@ -102,6 +102,11 @@ border: none;
 border-radius: 4px;
 padding: 6px 22px;
   cursor: pointer;
+
+    transition-property: background-color color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -184,6 +189,11 @@ header {
 .project-list-list {
   text-decoration: none;
   display: block;
+
+    transition-property: background-color color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-list-list:hover,
@@ -338,6 +348,10 @@ color: var(--text-cl);
 
   cursor: pointer;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-studio-actively {
@@ -386,6 +400,9 @@ color: var(--text-cl);
   cursor: pointer;
   text-decoration: none;
   
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio-actively {
@@ -437,6 +454,9 @@ color: var(--text-cl);
   cursor: pointer;
   text-decoration: none;
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-contacts:hover,
@@ -455,6 +475,10 @@ color: var(--text-cl);
 display: flex;
 gap: 10px;
 align-items: center;
+
+transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-email:hover,
@@ -496,6 +520,10 @@ letter-spacing: 0.02em;
 color: var(--text-cl2);
 display: flex;
 gap: 10px;
+
+transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-tel:hover,
@@ -644,15 +672,17 @@ margin-bottom: 9px;
 
 line-height: calc(24/14);
 
-
-
-
 color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
   list-style: none;
 
       display: block;
+
+        transition-property: background-color color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-connection {
@@ -675,7 +705,10 @@ color: rgba(255, 255, 255, 0.6);
 
         display: block;
 
+  transition-property: background-color color;
 
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-title {
@@ -753,7 +786,6 @@ margin-bottom: 30px;
 
   fill: currentColor;
 
-
 }
 
 .regular-customers {
@@ -765,12 +797,18 @@ margin-bottom: 30px;
     border: 1px solid #afb1b8;
   border-radius: 4px;
 color:  #afb1b8;
+  transition-property: background-color color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers:hover,
 .regular-customers:focus {
   color: var(--brand-color2);
 border-color: var(--brand-color2);
+
+
 }
 
 .social-link {
@@ -792,10 +830,16 @@ border-color: var(--brand-color2);
   justify-content:center;
   align-items: center;
   color: #afb1b8;
+
+  transition-property: background-color color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .toils-picture {
     fill: currentColor;
+    
 }
 
 .social-network:focus,
@@ -813,6 +857,11 @@ background-color: var(--brand-color2);
   align-items: center;
   fill: var(--text-button-color);
   background-color:rgba(255, 255, 255, 10%);
+
+  transition-property: background-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-network-below:focus,
@@ -895,6 +944,16 @@ position: relative;
 
   transform: translatey(+100%);
   transition: transform 250ms ease;
+
+  padding: 63px 24px;
+
+font-size: 18px;
+line-height: calc(28/18);
+/* or 156% */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
 }
 
 .backdrop {
