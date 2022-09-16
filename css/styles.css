@@ -81,7 +81,7 @@ border: none;
   padding: 10px 32px;
 
 
-  padding-left: 692px;
+
 
 
 }
@@ -385,6 +385,7 @@ color: var(--text-cl);
 
   cursor: pointer;
   text-decoration: none;
+  
 }
 
 .link-portfolio-actively {
@@ -420,6 +421,7 @@ border-radius: 2px;
   color: var(--brand-color2);
   cursor: pointer;
   text-decoration: none;
+  
 }
 
 .link-contacts {
@@ -848,6 +850,7 @@ align-items: baseline;
 .box-2,
 .box-3 {
   position: relative;
+  z-index: 1;
 }
 
 .box-1-1{
@@ -892,4 +895,59 @@ position: relative;
 
   transform: translatey(+100%);
   transition: transform 250ms ease;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1000;
+  
+}
+
+.modal {
+width: 528px;
+height: 581px;
+  background-color: #fff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+  border-radius: 4px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  
+}
+
+.backdrop {
+transition: visibility 250ms, opacity 250ms;
+}
+
+.modal-btn {
+  border-radius: 50%;
+position: absolute;
+top: 8px;
+right: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-color: #fff;
+border: 1px solid rgba(0, 0, 0, 10%);
+
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+.x {
+color: #212121;
 }
